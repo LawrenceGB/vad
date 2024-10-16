@@ -197,6 +197,8 @@ export class AudioNodeVAD {
         fullOptions.modelFetcher(fullOptions.modelURL)
       )
     } catch (e) {
+      console.log('Working')
+      console.log(e)
       console.error(
         `Encountered an error while loading model file. Please make sure silero_vad.onnx, included with @ricky0123/vad-web, is available at the specified path:
       ${fullOptions.modelURL}
